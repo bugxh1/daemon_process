@@ -7,4 +7,7 @@ chmod +x daemon_process.sh
 
 ./daemon_process.sh -p "celery" -c "celery -A tasks worker -l info -n worker@%h1 -c 10"
 ./daemon_process.sh -p "celery" -c "celery -A tasks worker -l info -n worker@%h2 -c 10"
+./daemon_process.sh -p "celery" -c "celery -A tasks worker -l info -n worker@%h3 -c 10"
+./daemon_process.sh -p "celery" -c "celery -A tasks worker -l info -n worker@%h4 -c 10"
+./daemon_process.sh -p "celery" -c "celery -A tasks worker -l info -n worker@%h5 -c 10"
 ```
